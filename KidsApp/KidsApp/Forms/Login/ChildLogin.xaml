@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.ChildLogin"
+             WidthRequest="10" 
+             Padding="10" >
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Entry x:Name="emailtxt" Placeholder="E-Mail"></Entry>
+            <Entry x:Name="passwordtxt" Placeholder="Password" IsPassword="True"></Entry>
+            <Button Clicked="ChildLoginAsync"  Text="Sign in" TextColor="White" BackgroundColor="Accent"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

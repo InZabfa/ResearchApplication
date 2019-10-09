@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             x:Class="KidsApp.CreateResearcherAccountForm"
+             Title="Register">
+    <ContentPage.Content>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <Label Margin="0,5"  Text="Please only create an account only if you are a researcher for the LuCiD" HorizontalTextAlignment="Center" FontSize="Micro"/>
+            <ScrollView Orientation="Both" VerticalOptions="FillAndExpand" HorizontalOptions ="Fill" Margin="0,10,0,10" Padding="0,0,0,10">
+                <dataForm:SfDataForm x:Name="dataForm" ColumnCount="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" LabelPosition="Top" />
+            </ScrollView>
+            <Button x:Name="btnCreateResearcherAccount"  Text="Create" TextColor="White" BackgroundColor="Accent" Clicked="BtnCreateResearcherAccount_Clicked" />
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

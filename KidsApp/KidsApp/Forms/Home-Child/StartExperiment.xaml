@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Child.StartExperiment"
+             Title="Start Experiment">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Under Development => HardCoded elements presented" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="By pressing Start you agree to the conditions of this experiment"></Label>
+            </StackLayout>
+            
+            <Button Text="Start" x:Name="StartExperimentBtn" Clicked="StartExperimentBtn_Clicked" BackgroundColor="Accent" TextColor="White" Margin="5,0,5,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

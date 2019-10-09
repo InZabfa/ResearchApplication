@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Researcher.AddWord"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             Title="Add a Word">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" >
+                <Label Margin="0,5" FontSize="15"  HorizontalTextAlignment="Center" Text="Please enter the word first and then you can select the level that you wish for it to be"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Margin="10,20,10,10" Text="Enter a word"/>
+                <Entry Margin="17,5,15,10" ReturnType="Next" x:Name="txtWord"/>
+                <combobox:SfComboBox Margin="20, 10, 20, 20" x:Name="comboBox"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Button Margin="20,10,20,10" x:Name="UploadImage" Text="Upload Image" TextColor="White" BackgroundColor="Accent" Clicked="UploadImage_Clicked"/>
+                <Label Margin ="10,10,10,10" x:Name="ImageAddedMsg"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                <Button Margin="10,10,10,10" WidthRequest="350" HeightRequest="45" x:Name="SaveWord" Text="Save" TextColor="White" BackgroundColor="Accent" Clicked="SaveWord_ClickedAsync"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

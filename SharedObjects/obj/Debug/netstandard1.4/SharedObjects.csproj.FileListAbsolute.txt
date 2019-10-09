@@ -1,0 +1,8 @@
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard1.4\SharedObjects.deps.json
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard1.4\SharedObjects.dll
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard1.4\SharedObjects.pdb
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard1.4\SharedObjects.csproj.CoreCompileInputs.cache
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard1.4\SharedObjects.AssemblyInfo.cs
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard1.4\SharedObjects.dll
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard1.4\SharedObjects.pdb
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard1.4\SharedObjects.csprojAssemblyReference.cache

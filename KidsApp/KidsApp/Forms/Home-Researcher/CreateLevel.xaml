@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Researcher.CreateLevel"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             Title="Create Level">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Margin="10">
+            <StackLayout>
+                <Label Margin="0,5,0,5" Text="Plese give this level a unique, identifiable name"></Label>
+                <Entry x:Name="levelName" Margin="10,5,15,10" ReturnType="Next" ></Entry>
+                <Label Margin="10,20,10,10" HorizontalTextAlignment="Start" Text="Select word that you wish to be a correct answer"/>
+                <combobox:SfComboBox Margin="20, 10, 20, 20" x:Name="comboBoxRightAnswer"/>
+                <Label Margin="10,20,10,10"  HorizontalTextAlignment="Start" Text="Select the number of wrong answers you wish to include"/>
+                <combobox:SfComboBox Margin="20, 10, 20, 20" x:Name="comboBoxWrongAnswersNo"/>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Margin="10,20,10,10" FontSize="15">Allow Randomisation</Label>
+                <Switch IsToggled="false" HorizontalOptions="End" />
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="addWrongAnswers" BackgroundColor="Accent" Text="Customize wrong answers" TextColor="White" Clicked="AddWrongAnswers_Clicked"></Button>
+            </StackLayout>
+            <StackLayout>
+                <Button Margin="0,0,0,10" x:Name="saveLevel" BackgroundColor="Accent" Text="Save" TextColor="White" Clicked="SaveLevel_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

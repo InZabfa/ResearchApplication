@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             x:Class="KidsApp.Forms.Home_Researcher.AddParticipant"
+             Title="Add Participant">
+    <ContentPage.Content>
+        <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label Margin="0,5"  FontSize="15"  HorizontalTextAlignment="Center"  Text="Please enter all the information about participant and their child"/>
+            <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions ="Fill" Margin="0,10,0,10" Padding="0,0,0,10">
+                <dataForm:SfDataForm x:Name="AddParticipantDataForm" ColumnCount="2" VerticalOptions="Fill" HorizontalOptions="Fill" LabelPosition="Top" />
+            </ScrollView>
+            <Button x:Name="saveParticipantInformation"  Text="Create Participant" TextColor="White" BackgroundColor="Accent" Clicked="SaveParticipantInformation_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

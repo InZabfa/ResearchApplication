@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Researcher.CreateExperiment"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             Title="Create Experiment">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Margin="0,5" FontSize="15"  HorizontalTextAlignment="Center" Text="Please enter information in all of the fields."/>
+
+            <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions ="Fill" Margin="0,10,0,10" Padding="0,0,0,10">
+                <StackLayout>
+                    <Label Margin="10,10,10,10" Text="Select a date for the Experiment"></Label>
+                    <DatePicker FontSize="Small" Margin="10,0,10,0" Format="dd/MM/yyyy" MinimumDate="01/01/2019" ></DatePicker>
+
+                    <Label Margin="10,10,10,0" Text="Select Session for this Experiment"></Label>
+                    <combobox:SfComboBox Margin="20, 10, 20, 20" x:Name="comboBoxExperiment"/>
+                    <Label Margin="10,0,10,10" HorizontalOptions="Center" Text="Don't have an Session! Click here..." x:Name="noExperiment"></Label>
+
+                    <Label Margin="10,10,10,0" Text="Select participant(s)"></Label>
+                    <combobox:SfComboBox Margin="20, 10, 20, 20" x:Name="comboBoxParticipant"/>
+
+                    <Label Margin="10,10,10,10" Text="Please, enter the first line of the Address this experiment will take place in"></Label>
+                    <Entry x:Name="AdressLine1Txt" Margin="5,0,5,0"></Entry>
+
+                    <Label Margin="10,10,10,10" Text="Please, enter the city in which the experiment will take place"></Label>
+                    <Entry x:Name="CityTxt" Margin="5,0,5,0"></Entry>
+
+                    <Label Margin="10,10,10,10" Text="Please enter the postcode"></Label>
+                    <Entry x:Name="PostcodeTxt" Margin="5,0,5,0"></Entry>
+                </StackLayout>
+            </ScrollView>
+            <Button x:Name="saveExperiment"  Text="Save" TextColor="White" BackgroundColor="Accent" Clicked="SaveExperiment_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

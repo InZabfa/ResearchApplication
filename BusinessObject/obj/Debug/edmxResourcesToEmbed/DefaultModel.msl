@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KidsAppModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="AccessTokens">
+      <EntityTypeMapping TypeName="KidsAppModel.AccessToken">
+        <MappingFragment StoreEntitySet="AccessToken">
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Difficulties">
+      <EntityTypeMapping TypeName="KidsAppModel.Difficulty">
+        <MappingFragment StoreEntitySet="Difficulty">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Experiments">
+      <EntityTypeMapping TypeName="KidsAppModel.Experiment">
+        <MappingFragment StoreEntitySet="Experiment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ResearcherID" ColumnName="ResearcherID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InteractiveResources">
+      <EntityTypeMapping TypeName="KidsAppModel.InteractiveResource">
+        <MappingFragment StoreEntitySet="InteractiveResources">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Resource" ColumnName="Resource" />
+          <ScalarProperty Name="ResearcherID" ColumnName="ResearcherID" />
+          <ScalarProperty Name="WordID" ColumnName="WordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Levels">
+      <EntityTypeMapping TypeName="KidsAppModel.Level">
+        <MappingFragment StoreEntitySet="Level">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WordID" ColumnName="WordID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="KidsAppModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ResultsRecorded" ColumnName="ResultsRecorded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Participants">
+      <EntityTypeMapping TypeName="KidsAppModel.Participant">
+        <MappingFragment StoreEntitySet="Participant">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ChildName" ColumnName="ChildName" />
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Researchers">
+      <EntityTypeMapping TypeName="KidsAppModel.Researcher">
+        <MappingFragment StoreEntitySet="Researcher">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Deparment" ColumnName="Deparment" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="KidsAppModel.Session">
+        <MappingFragment StoreEntitySet="Session">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateHeld" ColumnName="DateHeld" />
+          <ScalarProperty Name="ExperimentID" ColumnName="ExperimentID" />
+          <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionLevels">
+      <EntityTypeMapping TypeName="KidsAppModel.SessionLevel">
+        <MappingFragment StoreEntitySet="SessionLevels">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="KidsAppModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Words">
+      <EntityTypeMapping TypeName="KidsAppModel.Word">
+        <MappingFragment StoreEntitySet="Words">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Word1" ColumnName="Word" />
+          <ScalarProperty Name="ResearcherID" ColumnName="ResearcherID" />
+          <ScalarProperty Name="DifficultyID" ColumnName="DifficultyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WrongAnswers">
+      <EntityTypeMapping TypeName="KidsAppModel.WrongAnswer">
+        <MappingFragment StoreEntitySet="WrongAnswers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="ResourceID" ColumnName="ResourceID" />
+          <ScalarProperty Name="WordID" ColumnName="WordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

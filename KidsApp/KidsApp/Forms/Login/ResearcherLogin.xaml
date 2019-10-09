@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KidsApp"
+             x:Class="KidsApp.ResearcherLogin"
+             WidthRequest="10" 
+             Padding="10">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Entry x:Name="txtEmail" Placeholder="E-Mail"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True"></Entry>
+            <Button Clicked="ResearcherLoginAsync" Text="Sign in" TextColor="White" BackgroundColor="Accent" />
+            <Label x:Name="lblNoAccount" HorizontalOptions="Center" TextColor="Blue" FontSize="15" Text="Don't have an account?">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="CreateResearcherAccountTapGesture" Tapped="CreateResearcherAccountTapGesture_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

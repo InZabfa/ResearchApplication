@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KidsAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccessToken">
+    <Key>
+      <PropertyRef Name="Token" />
+    </Key>
+    <Property Name="Token" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ExpiryDate" Type="date" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Difficulty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Experiment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResearcherID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InteractiveResources">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Resource" Type="image" Nullable="false" />
+    <Property Name="ResearcherID" Type="int" Nullable="false" />
+    <Property Name="WordID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WordID" Type="int" Nullable="false" />
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SessionID" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+    <Property Name="ResultsRecorded" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChildName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Researcher">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deparment" Type="varchar" MaxLength="50" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Session">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateHeld" Type="datetime" Nullable="false" />
+    <Property Name="ExperimentID" Type="int" Nullable="false" />
+    <Property Name="ParticipantID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SessionLevels">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LevelID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Words">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Word" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResearcherID" Type="int" Nullable="false" />
+    <Property Name="DifficultyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WrongAnswers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LevelID" Type="int" Nullable="false" />
+    <Property Name="ResourceID" Type="int" Nullable="false" />
+    <Property Name="WordID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AccessToken_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="AccessToken" Type="Self.AccessToken" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AccessToken">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Experiment_Researcher">
+    <End Role="Researcher" Type="Self.Researcher" Multiplicity="1" />
+    <End Role="Experiment" Type="Self.Experiment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Researcher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Experiment">
+        <PropertyRef Name="ResearcherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InteractiveResources_Researcher">
+    <End Role="Researcher" Type="Self.Researcher" Multiplicity="1" />
+    <End Role="InteractiveResources" Type="Self.InteractiveResources" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Researcher">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="InteractiveResources">
+        <PropertyRef Name="ResearcherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InteractiveResources_Words1">
+    <End Role="Words" Type="Self.Words" Multiplicity="1" />
+    <End Role="InteractiveResources" Type="Self.InteractiveResources" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Words">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="InteractiveResources">
+        <PropertyRef Name="WordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Level_InteractiveResources">
+    <End Role="InteractiveResources" Type="Self.InteractiveResources" Multiplicity="1" />
+    <End Role="Level" Type="Self.Level" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InteractiveResources">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Level">
+        <PropertyRef Name="ResourceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Level_Words">
+    <End Role="Words" Type="Self.Words" Multiplicity="1" />
+    <End Role="Level" Type="Self.Level" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Words">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Level">
+        <PropertyRef Name="WordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Log_Session">
+    <End Role="Session" Type="Self.Session" Multiplicity="1" />
+    <End Role="Log" Type="Self.Log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Session">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Log">
+        <PropertyRef Name="SessionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Researcher_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Researcher" Type="Self.Researcher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Researcher">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Experiment">
+    <End Role="Experiment" Type="Self.Experiment" Multiplicity="1" />
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Experiment">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="ExperimentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Session_Participant">
+    <End Role="Participant" Type="Self.Participant" Multiplicity="1" />
+    <End Role="Session" Type="Self.Session" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Session">
+        <PropertyRef Name="ParticipantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionLevels_Level">
+    <End Role="Level" Type="Self.Level" Multiplicity="1" />
+    <End Role="SessionLevels" Type="Self.SessionLevels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SessionLevels">
+        <PropertyRef Name="LevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Words_Difficulty">
+    <End Role="Difficulty" Type="Self.Difficulty" Multiplicity="1" />
+    <End Role="Words" Type="Self.Words" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Difficulty">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Words">
+        <PropertyRef Name="DifficultyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WrongAnswers_InteractiveResources">
+    <End Role="InteractiveResources" Type="Self.InteractiveResources" Multiplicity="1" />
+    <End Role="WrongAnswers" Type="Self.WrongAnswers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InteractiveResources">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WrongAnswers">
+        <PropertyRef Name="ResourceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WrongAnswers_Level">
+    <End Role="Level" Type="Self.Level" Multiplicity="1" />
+    <End Role="WrongAnswers" Type="Self.WrongAnswers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Level">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WrongAnswers">
+        <PropertyRef Name="LevelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WrongAnswers_Words">
+    <End Role="Words" Type="Self.Words" Multiplicity="1" />
+    <End Role="WrongAnswers" Type="Self.WrongAnswers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Words">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WrongAnswers">
+        <PropertyRef Name="WordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KidsAppModelStoreContainer">
+    <EntitySet Name="AccessToken" EntityType="Self.AccessToken" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Difficulty" EntityType="Self.Difficulty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Experiment" EntityType="Self.Experiment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InteractiveResources" EntityType="Self.InteractiveResources" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Level" EntityType="Self.Level" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Participant" EntityType="Self.Participant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Researcher" EntityType="Self.Researcher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Session" EntityType="Self.Session" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SessionLevels" EntityType="Self.SessionLevels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Words" EntityType="Self.Words" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WrongAnswers" EntityType="Self.WrongAnswers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AccessToken_Users" Association="Self.FK_AccessToken_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AccessToken" EntitySet="AccessToken" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Experiment_Researcher" Association="Self.FK_Experiment_Researcher">
+      <End Role="Researcher" EntitySet="Researcher" />
+      <End Role="Experiment" EntitySet="Experiment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InteractiveResources_Researcher" Association="Self.FK_InteractiveResources_Researcher">
+      <End Role="Researcher" EntitySet="Researcher" />
+      <End Role="InteractiveResources" EntitySet="InteractiveResources" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InteractiveResources_Words1" Association="Self.FK_InteractiveResources_Words1">
+      <End Role="Words" EntitySet="Words" />
+      <End Role="InteractiveResources" EntitySet="InteractiveResources" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Level_InteractiveResources" Association="Self.FK_Level_InteractiveResources">
+      <End Role="InteractiveResources" EntitySet="InteractiveResources" />
+      <End Role="Level" EntitySet="Level" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Level_Words" Association="Self.FK_Level_Words">
+      <End Role="Words" EntitySet="Words" />
+      <End Role="Level" EntitySet="Level" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Log_Session" Association="Self.FK_Log_Session">
+      <End Role="Session" EntitySet="Session" />
+      <End Role="Log" EntitySet="Log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Users" Association="Self.FK_Participant_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Researcher_Users" Association="Self.FK_Researcher_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Researcher" EntitySet="Researcher" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Experiment" Association="Self.FK_Session_Experiment">
+      <End Role="Experiment" EntitySet="Experiment" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Session_Participant" Association="Self.FK_Session_Participant">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Session" EntitySet="Session" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionLevels_Level" Association="Self.FK_SessionLevels_Level">
+      <End Role="Level" EntitySet="Level" />
+      <End Role="SessionLevels" EntitySet="SessionLevels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Words_Difficulty" Association="Self.FK_Words_Difficulty">
+      <End Role="Difficulty" EntitySet="Difficulty" />
+      <End Role="Words" EntitySet="Words" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WrongAnswers_InteractiveResources" Association="Self.FK_WrongAnswers_InteractiveResources">
+      <End Role="InteractiveResources" EntitySet="InteractiveResources" />
+      <End Role="WrongAnswers" EntitySet="WrongAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WrongAnswers_Level" Association="Self.FK_WrongAnswers_Level">
+      <End Role="Level" EntitySet="Level" />
+      <End Role="WrongAnswers" EntitySet="WrongAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WrongAnswers_Words" Association="Self.FK_WrongAnswers_Words">
+      <End Role="Words" EntitySet="Words" />
+      <End Role="WrongAnswers" EntitySet="WrongAnswers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

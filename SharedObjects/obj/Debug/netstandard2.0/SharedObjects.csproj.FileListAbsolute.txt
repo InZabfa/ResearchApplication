@@ -1,0 +1,9 @@
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard2.0\SharedObjects.deps.json
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard2.0\SharedObjects.dll
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\bin\Debug\netstandard2.0\SharedObjects.pdb
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.csprojAssemblyReference.cache
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.csproj.CoreCompileInputs.cache
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.AssemblyInfoInputs.cache
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.AssemblyInfo.cs
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.dll
+C:\Users\inesa\source\repos\KidsApp\SharedObjects\obj\Debug\netstandard2.0\SharedObjects.pdb

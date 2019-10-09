@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Child.UpcomingExperiments"
+             Title="Experiments">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Under Development => HardCoded elements presented" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+            <Label Text="You have 'Number' assigned Experiments"></Label>
+
+            <StackLayout Margin="5,20,5,20">
+                <Label Text="Title of the assigned Experiment" FontSize="Medium"/>
+                <Label Text="Assigned by - Researcher name"/>
+                <Label Text="Date of the Experiment"/>
+                <Label Text="Address of the Experiment"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

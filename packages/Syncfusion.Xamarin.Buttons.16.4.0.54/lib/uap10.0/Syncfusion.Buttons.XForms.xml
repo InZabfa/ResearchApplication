@@ -1,0 +1,2956 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Buttons.XForms</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.XForms.Buttons.SegmentDisplayMode">
+            <summary>
+            Describes different modes of diaplaying <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/> in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SegmentDisplayMode.Image">
+            <summary>
+            Displays the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.Text"/> in segment <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SegmentDisplayMode.Text">
+            <summary>
+            Displays the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.IconFont"/> in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SegmentDisplayMode.ImageWithText">
+            <summary>
+            Displays both <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.Text"/> and <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.IconFont"/> in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SelectionIndicatorPosition">
+            <summary>
+            Describes the possible values for the position of selection strip in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>,
+            selection indicator is to indicate the selected index in the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorPosition.Top">
+            <summary>
+            Specifies the top location for the selection indicator in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorPosition.Bottom">
+            <summary>
+            Specifies the bottom location for the selection indicator in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorPosition.Fill">
+            <summary>
+            Specifies the fill region for the selection indicator in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+            <remarks>Selection color of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/> should be varied with the strip color when set this value. /></remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorPosition.Border">
+            <summary>
+            Specifies the border to cover the outer region of the selected item in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> View.
+            </summary>
+            <remarks>Selection color of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/> should be varied with the strip color when set this value. /></remarks>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SelectionIndicatorSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for selection indicator in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>,
+            selection indicator is strip which is to indicate the selected item in the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.Color">
+            <summary>
+            Gets or sets the color of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.ColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.Color"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.Position">
+            <summary>
+            Gets or sets the position of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.PositionProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.Position"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.StrokeThickness">
+            <summary>
+            Gets or sets the thickness for the stroke of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.StrokeThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.StrokeThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.CornerRadius">
+            <summary>
+            Gets or sets the corner radius for the border of selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.CornerRadius"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke when theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SelectionIndicatorSettings.OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke at whenever common theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfSegmentedControl">
+            <inheritdoc />
+            <summary>
+            SegmentedControl control lets users explore and switch among different views.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.ItemsSource">
+            <summary>
+            Gets or sets children for <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> through the collection of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/> or collection of strings or views.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.ItemsSource"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectedIndex">
+            <summary>
+            Gets or sets index of the selected item of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectedIndexProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectedIndex"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.DisplayMode">
+            <summary>
+            Gets or sets value of type <see cref="T:Syncfusion.XForms.Buttons.SegmentDisplayMode"/> to define the display mode of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/>. 
+            Default value is <see cref="F:Syncfusion.XForms.Buttons.SegmentDisplayMode.Text"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.DisplayModeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.DisplayMode"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentHeight">
+            <summary>
+            Gets or sets the height of segments in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentHeightProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentHeight"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentWidth">
+            <summary>
+            Gets or sets the width of the segments in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentWidthProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentWidth"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.VisibleSegmentsCount">
+            <summary>
+            Gets or sets the value to show the segments in the available space in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>. As it overrides to segment width property, other segments can be viewed by scrolling.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.VisibleSegmentsCountProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.VisibleSegmentsCount"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings">
+            <summary>
+            Gets or sets value of type <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings"/> to cusomize the selection indicator of <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings"/>,
+            Selection indicator is a strip indicating the selected item of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.DisabledTextColor">
+            <summary>
+            Gets or sets the text color of disabled segment items in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.DisabledTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.DisabledTextColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionTextColor">
+            <summary>
+            Gets or sets the text color of the selected segment in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionTextColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderColor">
+            <summary>
+            Gets or sets the color of the border for <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.Color">
+            <summary>
+            Gets or sets the color of segments for <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.ColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.Color"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderThickness">
+            <summary>
+            Gets or sets the thickness of the border for <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.BorderThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.CornerRadius">
+            <summary>
+            Gets or sets the corner radius value for the border of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.CornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.CornerRadius"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentCornerRadius">
+            <summary>
+            Gets or sets the corner radius value for the segment items available in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentCornerRadiusProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentCornerRadius"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBackgroundColor">
+            <summary>
+            Gets or sets background color for the segment items in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderColor">
+            <summary>
+            Gets or sets the color for border between segment items in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderThickness">
+            <summary>
+            Gets or sets thickness for segment border in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentBorderThickness"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentPadding">
+            <summary>
+            Gets or sets the padding for segment in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentPaddingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SegmentPadding"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionAnimationDuration">
+            <summary>
+            Gets or sets the duration for the animation of selection strip <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionAnimationDurationProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionAnimationDuration"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontFamily">
+            <summary>
+            Gets or sets the font family for the text of Segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontAttributes">
+            <summary>
+            Gets or sets the attributes for the font of text in segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontSize">
+            <summary>
+            Gets or sets the font size for the text of segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontColor">
+            <summary>
+            Gets or sets foreground color for text of segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontFamily">
+            <summary>
+            Gets or sets the font family for the icons in segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontSize">
+            <summary>
+            Gets or sets the size of icons in segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontColor">
+            <summary>
+            Gets or sets foreground color for Icons in segment items.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.FontIconFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentedControl.BackgroundColor">
+            <summary>
+            Gets or sets the color of segments for <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentedControl.BackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.Color"/> bindable property.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionChanged">
+            <summary>
+            Occurs when selected index of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.CanTriggerSelectionChangedEvent">
+            <summary>
+            To check Whether the selection changed event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.RaiseSelectionChanged(Syncfusion.XForms.Buttons.SelectionChangedEventArgs)">
+            <summary>
+            Invoke event with the updated index value.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.OnMeasure(System.Double,System.Double)">
+            <summary>
+            On the base OnMeasure and returns SizeRequest based on the Parent.
+            </summary>
+            <returns>The measure.</returns>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.CalculateItemsWidth(System.Double)">
+            <summary>
+            Calculate each child items 
+            </summary>
+            <param name="widthConstraint"> it is width of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.GetSegmentWidth(System.Double)">
+            <summary>
+            Get the segment width
+            </summary>
+            <param name="widthConstraint"> It is width of <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> </param>
+            <returns> It is boolean </returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.OnBindingContextChanged">
+            <summary>
+            Set children BindingContext when <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> BindingContext changed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.CalculateSegmentWidth(System.Double)">
+            <summary>
+            Calculate required segmented items width
+            </summary>
+            <param name="widthConstraint"> whole width of SfSegmentedControl </param>
+            <returns> It returns double value </returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.OnLayoutChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Call the measure when change SegmentedHeight,SegmentWidth and BorderThickness properties
+            </summary>
+            <param name="bindable"> It holds the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> </param>
+            <param name="oldValue"> It holds old value </param>
+            <param name="newValue"> It holds new value  </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.OnItemsSourceChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Call the SetParentAndBindingContext method when <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.ItemsSource"/> property changed 
+            </summary>
+            <param name="bindable"> It holds the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> </param>
+            <param name="oldValue"> It holds old value </param>
+            <param name="newValue"> It holds new value  </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.OnSelectionSettingChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Call the SetParentAndBindingContextOfSelectionSettings method when <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings"/> property change
+            </summary>
+            <param name="bindable"> It holds the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl"/> </param>
+            <param name="oldValue"> It holds old value </param>
+            <param name="newValue"> It holds new value  </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.SetParentAndBindingContextOfSelectionSettings">
+            <summary>
+            Set the parent and BindingContext of <see cref="P:Syncfusion.XForms.Buttons.SfSegmentedControl.SelectionIndicatorSettings"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.SetParentAndBindingContext">
+            <summary>
+            Set the parent and BindingContext of all <see cref="T:Syncfusion.XForms.Buttons.SfSegmentItem"/> child element
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Gets the control's style.
+            </summary>
+            <returns> Returns the style for the theme dictionary.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            The method gets called when a theme dictionary that contains the value for the control key is merged in application.
+            </summary>
+            <param name="oldTheme">The Old theme parameter.</param>
+            <param name="newTheme">The New theme parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControl.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            The method gets called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">The Old theme parameter.</param>
+            <param name="newTheme">The New theme parameter.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SelectionChangedEventArgs">
+            <inheritdoc />
+            <summary>
+            Contains data for the event which is raised when the selected index is changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SelectionChangedEventArgs.Index">
+            <summary>
+            Gets the value of selected index.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfSegmentItem">
+            <inheritdoc />
+            <summary>
+            Represents a single element in <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControl" /> control.
+            It contains the properties to configure title and content region.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.Text">
+            <summary>
+            Gets or sets the text of Segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.TextProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.Text"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.IconFont">
+            <summary>
+            Gets or sets the font for the segment item icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.IconFontProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.IconFont"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontFamily">
+            <summary>
+            Gets or sets the font family of segment item text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontAttributes">
+            <summary>
+            Gets or sets the font attribute of segment item text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontAttributesProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontAttributes"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontSize">
+            <summary>
+            Gets or sets the font size of segment item text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontColor">
+            <summary>
+            Gets or sets the text color of segment item text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontFamily">
+            <summary>
+            Gets or sets the font family of the icon in segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontFamily"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontSize">
+            <summary>
+            Gets or sets the font size of icon text for segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontSize"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontColor">
+            <summary>
+            Gets or sets the text color for font icon for segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.FontIconFontColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionTextColor">
+            <summary>
+            Gets or sets the text color for the selected segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionTextColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionTextColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionBackgroundColor">
+            <summary>
+            Gets or sets the background color value for the selected segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionBackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.SelectionBackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.BackgroundColor">
+            <summary>
+            Gets or sets the background color value for segment item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.BackgroundColorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.BackgroundColor"/> bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfSegmentItem.IsEnabled">
+            <summary>
+            Gets or sets the value to choose whether the segment item is enabled or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfSegmentItem.IsEnabledProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfSegmentItem.IsEnabled"/> bindable property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentItem.OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke when theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentItem.OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            Method invoke at whenever common theme changes.
+            </summary>
+            <param name="oldTheme">Old theme name</param>
+            <param name="newTheme">New theme name</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfCheckBoxStyles">
+            <summary>
+            Holds the theme style for the <see cref="T:Syncfusion.XForms.Buttons.SfCheckBox"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBoxStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfCheckBoxStyles" /> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfRadioButtonStyles">
+            <summary>
+            Holds the theme style for the <see cref="T:Syncfusion.XForms.Buttons.SfRadioButton"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButtonStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfRadioButtonStyles" /> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfRadioGroup">
+            <summary>
+            Represents the RadioGroup control
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfRadioGroup.checkedButton">
+            <summary>
+            Represents the currently checked radio button
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfRadioGroup.isStateChangedFromGroup">
+            <summary>
+            Represents whether the state update is from radio group
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioGroup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfRadioGroup"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfRadioGroup.IsStateChangedFromGroup">
+            <summary>
+            Gets a value indicating whether the state changed from radio group
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioGroup.UpdateCheckedState(Syncfusion.XForms.Buttons.SfRadioButton)">
+            <summary>
+            Updates the current radio button state
+            </summary>
+            <param name="radioButton">Represents <see cref="T:Syncfusion.XForms.Buttons.SfRadioButton"/> instance</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioGroup.OnAdded(Xamarin.Forms.View)">
+            <summary>
+            OnAdded override method
+            </summary>
+            <param name="view">child view</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioGroup.OnRemoved(Xamarin.Forms.View)">
+            <summary>
+            OnRemoved override method
+            </summary>
+            <param name="view">child view</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfRadioButton">
+            <summary>
+            Represents the <see cref="T:Syncfusion.XForms.Buttons.SfRadioButton"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfRadioButton.parentRadioGroup">
+            <summary>
+            Represents the parent radio group
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfRadioButton"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfRadioButton.ParentRadioGroup">
+            <summary>
+            Gets or sets a parent radio group for <see cref="T:Syncfusion.XForms.Buttons.SfRadioButton"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButton.UpdateRadioButtonGroupState">
+            <summary>
+            Update the parent radio button group state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButton.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the controls style color.
+            </summary>
+            <returns>Returns the style color to core.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButton.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when a theme dictionary that contains the value for your control key is merged in application. 
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfRadioButton.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.StateChangedEventArgs">
+            <summary>
+             Specifies the state event arguments.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.StateChangedEventArgs.#ctor(System.Nullable{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.StateChangedEventArgs"/> class
+            </summary>
+            <param name="isChecked">Current state of the control</param>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.StateChangedEventArgs.IsChecked">
+            <summary>
+            Gets or set a value indicating whether the ToggleButton is checked.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.ToggleButton">
+            <summary>
+            Represents the <see cref="T:Syncfusion.XForms.Buttons.ToggleButton"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.IsCheckedProperty">
+            <summary>
+            Backing store for the IsChecked property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.TextProperty">
+            <summary>
+            Backing store for Text property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.TextColorProperty">
+            <summary>
+            Backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.FontFamilyProperty">
+            <summary>
+            Backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.FontSizeProperty">
+            <summary>
+            Backing store for FontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.FontAttributesProperty">
+            <summary>
+            Backing store for FontAttributes property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.IsThreeStateProperty">
+            <summary>
+            Backing store for IsThreeState property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.CheckedColorProperty">
+            <summary>
+            Backing store for CheckedColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.UncheckedColorProperty">
+            <summary>
+            Backing store for UnCheckedColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.HorizontalTextAlignmentProperty">
+            <summary>
+            Backing store for HorizontalTextAlignment property.
+            </summary>       
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.ToggleButton.PaddingProperty">
+            <summary>
+            Backing store for HorizontalTextAlignment property.
+            </summary>       
+        </member>
+        <member name="E:Syncfusion.XForms.Buttons.ToggleButton.StateChanged">
+            <summary>
+            Event handles when value of the IsChecked property changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.IsChecked">
+            <summary>
+            Gets or sets whether the ToggleButton is checked.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.TextColor">
+            <summary>
+            Gets or sets the color of the text in this control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.FontFamily">
+            <summary>
+            Gets or sets the font used to display text in the control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.FontSize">
+            <summary>
+            Gets or sets the size of the text in this control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.FontAttributes">
+            <summary>
+            Gets or sets the value that indicates whether the font for the ToggleButton text is bold,italic, or neither.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.IsThreeState">
+            <summary>
+            Gets or sets a value indicating whether the control supports three states.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.CheckedColor">
+            <summary>
+            Gets or sets the fill color of the ToggleButton when the IsChecked property is set to true
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.UncheckedColor">
+            <summary>
+            Gets or sets the stroke color of the ToggleButton when the IsChecked property is set to false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.HorizontalTextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of the text in this content.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.Padding">
+            <summary>
+            Gets or sets the padding of the Toggle button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.ToggleButton.PropertiesChanged">
+            <summary>
+            Gets or sets the list of property names.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.OnMeasure(System.Double,System.Double)">
+            <summary>
+            Ons the size request.
+            </summary>
+            <returns>The size request.</returns>
+            <param name="widthConstraint">Width constraint.</param>
+            <param name="heightConstraint">Height constraint.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.OnToggleButtonPropertyChanged(System.String)">
+            <summary>
+            Handles On CheckBox Property Changed event
+            </summary>
+            <param name="propertyName">changed property name.</param> 
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.UpdateRadioButtonGroupState">
+            <summary>
+            Update the parent radio button group state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.OnIsCheckedPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles IsChecked changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.TextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.TextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.FontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text FontFamily event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.FontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text FontSize event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.FontAttributesPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text FontAttributes event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.IsThreeStatePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text IsThreeState event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.CheckedColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text CheckedColor event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.UnCheckedColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text UnCheckedColor event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.OnHorizontalTextAlignmentPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles HorizontalTextAlignment changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.OnPaddingPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Padding changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetPaddingDefaultValue">
+            <summary>
+            Get the default padding value
+            </summary>
+            <returns>Returns the default padding value</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetDefaultTextColor">
+            <summary>
+            Get default value of Text Color.
+            </summary>
+            <returns>returns default color for control text.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetDefaultUncheckedColor">
+            <summary>
+            Get default value of Unchecked Color.
+            </summary>
+            <returns>returns default color for control Unchecked state.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetDefaultCheckedColor">
+            <summary>
+            Get default value of checked color.
+            </summary>
+            <returns>returns default color for control checked state.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetDefaultFontFamily">
+            <summary>
+            Get default value of Font family.
+            </summary>
+            <returns>returns default font family.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ToggleButton.GetDefaultFontSize">
+            <summary>
+            Get default value of Font size.
+            </summary>
+            <returns>returns default font size</returns>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfCheckBox">
+            <summary>
+            Represents the <see cref="T:Syncfusion.XForms.Buttons.SfCheckBox"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfCheckBox.CornerRadiusProperty">
+            <summary>
+            Backing store for CornerRadius property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfCheckBox"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfCheckBox.CornerRadius">
+            <summary>
+            Gets or sets the degree to which the corners of a <see cref="T:Syncfusion.XForms.Buttons.SfCheckBox"/> rectangle is rounded.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.CornerRadiusPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text CornerRadius event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.GetCornerRadius">
+            <summary>
+            Get the default Corner Radius value
+            </summary>
+            <returns>Returns the default padding value</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the controls style color.
+            </summary>
+            <returns>Returns the style color to core.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when a theme dictionary that contains the value for your control key is merged in application. 
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfCheckBox.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            This method will be called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">Old theme.</param>
+            <param name="newTheme">New theme.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.Alignment">
+            <summary>
+            Represents the Alignment.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.Alignment.Start">
+            <summary>
+            The alignment start
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.Alignment.End">
+            <summary>
+            The alignment end
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfButton">
+            <summary>
+            Represents the <see cref="T:Syncfusion.XForms.Buttons.SfButton"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.FontSizeProperty">
+            <summary>
+            Backing store for FontSize property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.FontFamilyProperty">
+            <summary>
+            Backing store for FontFamily property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.FontAttributesProperty">
+            <summary>
+            Backing store for FontAttributes property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.TextColorProperty">
+            <summary>
+            Backing store for TextColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.BackgroundColorProperty">
+            <summary>
+            Backing store for BackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.BorderColorProperty">
+            <summary>
+            Backing store for BorderColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.BorderWidthProperty">
+            <summary>
+            Backing store for BorderWidth property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.PressedBackgroundColorProperty">
+            <summary>
+            Backing store for PressedBackgroundColor property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.HorizontalTextAlignmentProperty">
+            <summary>
+            Backing store for HorizontalTextAlignment property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.VerticalTextAlignmentProperty">
+            <summary>
+            Backing store for VerticalTextAlignment property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.BackgroundImageProperty">
+            <summary>
+            Backing store for BackgroundImage property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ShowIconProperty">
+            <summary>
+            Backing store for ShowIcon property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.IsCheckableProperty">
+            <summary>
+            Backing store for IsCheckable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.IsCheckedProperty">
+            <summary>
+            Backing store for IsChecked property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ImageSourceProperty">
+            <summary>
+            Backing store for Image Name property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.PaddingProperty">
+            <summary>
+            Backing store for padding property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.TextProperty">
+            <summary>
+            Backing store for Text property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ImageAlignmentProperty">
+            <summary>
+            Backing store for ImageAlignment property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ContentProperty">
+            <summary>
+            Identifies the Content bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.CommandProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfButton.Command"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.CommandParameterProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.XForms.Buttons.SfButton.CommandParameter"/> bindable property.
+            </summary>
+            <remarks>This bindable property is read-only.</remarks>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ImageWidthProperty">
+            <summary>
+            Backing store for ImageWidth property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ShowCloseButtonProperty">
+            <summary>
+            Backing store for ShowCloseButton property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.ShowSelectionIndicatorProperty">
+            <summary>
+            Backing store for ShowSelectionIndicator property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.CloseButtonAlignmentProperty">
+            <summary>
+            Backing store for CloseButtonAlignment property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.SelectionIndicatorAlignmentProperty">
+            <summary>
+            Backing store for SelectionIndicatorAlignment property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.CloseButtonColorProperty">
+            <summary>
+            Backing store for CloseButton Color property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.SelectionIndicatorColorProperty">
+            <summary>
+            Backing store for Selection Indicator Color property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.closeButtonPosition">
+            <summary>
+            The close button position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.buttonLayout">
+            <summary>
+            The button layout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.defaultPadding">
+            <summary>
+            The default padding.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.defaultSelectionRightPadding">
+            <summary>
+            The default selection right padding.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.defaultIconFontSize">
+            <summary>
+            The default size of the icon font.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.selectionIndicatorText">
+            <summary>
+            The selection indicator text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.closeButtonText">
+            <summary>
+            The close button text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.defaultSelectionIndicatorWidth">
+            <summary>
+            The default width of the selection indicator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.defaultCloseButtonWidth">
+            <summary>
+            The default width of the close button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.disabledBackgroundColor">
+            <summary>
+            The color of the disabled background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.disabledBorderColor">
+            <summary>
+            The color of the disabled border.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.disabledTextColor">
+            <summary>
+            The color of the disabled text.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.disabledPressedBackgroundColor">
+            <summary>
+            The color of the disabled pressed background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.disabledPressedTextColor">
+            <summary>
+            The color of the disabled pressed background.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.mainGrid">
+            <summary>
+            The main grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.buttonContent">
+            <summary>
+            The content of the button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.closeButton">
+            <summary>
+            The close button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.imageView">
+            <summary>
+            The image view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.selectionButton">
+            <summary>
+            The selection button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.backgroundImageView">
+            <summary>
+            The background image view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.contentGrid">
+            <summary>
+            The content grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.selectionIndicatorGrid">
+            <summary>
+            The selection indicator grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.closeButtonGrid">
+            <summary>
+            The close button grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.imageViewGrid">
+            <summary>
+            The image view grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.touchEffect">
+            <summary>
+            Represents the touch effect.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.oldContent">
+            <summary>
+            Represents the old content.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfButton.viewCollection">
+            <summary>
+            Represents the button content view collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfButton"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Buttons.SfButton.Clicked">
+            <summary>
+            Clicked event handler.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Buttons.SfButton.CloseButtonClicked">
+            <summary>
+            CloseButton Clicked event handler.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.RaiseClicked(System.EventArgs)">
+            <summary>
+            The raise clicked event.
+            </summary>
+            <param name="args"> The Event Argument. </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.RaiseCloseButtonClicked(System.EventArgs)">
+            <summary>
+            The raise close button clicked event.
+            </summary>
+            <param name="args"> The Event Argument. </param>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.FontSize">
+            <summary>
+            Gets or sets the font size of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.FontFamily">
+            <summary>
+            Gets or sets the font family of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.FontAttributes">
+            <summary>
+            Gets or sets the font attributes of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.TextColor">
+            <summary>
+            Gets or sets the text color of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.BackgroundColor">
+            <summary>
+            Gets or sets the background color of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.BorderColor">
+            <summary>
+            Gets or sets the border color of the control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.BorderWidth">
+            <summary>
+            Gets or sets the border thickness of the control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.PressedBackgroundColor">
+            <summary>
+            Gets or sets the pressed background color of control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.HorizontalTextAlignment">
+            <summary>
+            Gets or sets the horizontal text alignment of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.VerticalTextAlignment">
+            <summary>
+            Gets or sets the vertical text alignment of the text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.BackgroundImage">
+            <summary>
+            Gets or sets the background image of control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ShowIcon">
+            <summary>
+            Gets or sets the visibility of image icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.IsCheckable">
+            <summary>
+            Gets or sets if we will check or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.IsChecked">
+            <summary>
+            Gets or sets the checked state
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.Text">
+            <summary>
+            Gets or sets the control text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ImageSource">
+            <summary>
+            Gets or sets the image name
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.Padding">
+            <summary>
+            Gets or sets the margin of image
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ImageAlignment">
+            <summary>
+            Gets or sets the image alignment 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.Content">
+            <summary>
+            Gets or sets the content view.
+            </summary>
+            <value>The content of border.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.Command">
+            <summary>
+            Gets or sets the command.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.CommandParameter">
+            <summary>
+            Gets or sets the command parameter.
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ImageWidth">
+            <summary>
+            Gets or sets the width of image icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ShowCloseButton">
+            <summary>
+            Gets or sets the Visibility of close button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.ShowSelectionIndicator">
+            <summary>
+            Gets or sets the Visibility of selection indicator
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.CloseButtonAlignment">
+            <summary>
+            Gets or sets the close button alignment 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.SelectionIndicatorAlignment">
+            <summary>
+            Gets or sets the selection indicator alignment 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.CloseButtonColor">
+            <summary>
+            Gets or sets the close button color
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfButton.SelectionIndicatorColor">
+            <summary>
+            Gets or sets the selection indicator Color
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnPropertyChanged(System.String)">
+            <summary>
+            Ons the property changed.
+            </summary>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnMeasure(System.Double,System.Double)">
+            <summary>
+            Method is called when a layout measurement happens.
+            </summary>
+            <returns>The size of the control.</returns>
+            <param name="widthConstraint">The width constraint of the control.</param>
+            <param name="heightConstraint">The height constraint of the control.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.SetBackgroundColor(Xamarin.Forms.Color)">
+            <summary>
+            Sets the color of the background.
+            </summary>
+            <param name="color">Color.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.SetBorderColor(Xamarin.Forms.Color)">
+            <summary>
+            Sets the color of the background.
+            </summary>
+            <param name="color">Color.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.SetTextColor(Xamarin.Forms.Color)">
+            <summary>
+            Sets the color of the text.
+            </summary>
+            <param name="color">Color.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultVerticalPadding">
+            <summary>
+            Gets the default stext padding
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultTextFontSize">
+            <summary>
+            Gets the default size of the text font.
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultBorderWidth">
+            <summary>
+            Gets the default background thickness of the text.
+            </summary>
+            <returns>The default background thickness.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultClosedButtonText">
+            <summary>
+            Gets the default closed button text
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultCloseButtonFontFamily">
+            <summary>
+            Gets the default closed button font family
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultSelectionIndicatorText">
+            <summary>
+            Gets the default closed button text
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.GetDefaultSelectionIndicatorFontFamily">
+            <summary>
+            Gets the default closed button font family
+            </summary>
+            <returns>The default text font size.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnContentPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles content property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCommandPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles command property changed event.
+            </summary>
+            <param name="bindable">the data binding object.</param>
+            <param name="oldValue">the old value.</param>
+            <param name="newValue">the new value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCommandParameterPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Calls the command parameter method when the property is changed
+            </summary>
+            <param name="bindable">Bindable object of SfButton.</param>
+            <param name="oldValue">Command parameter old value of SfButton.</param>
+            <param name="newValue">Command parameter new value of SfButton.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Font Size event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text Color event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Background Color event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBorderColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Border Color event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBorderWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles BorderWidth event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnHorizontalTextAlignmentPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Horizontal Text Alignment event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnVerticalTextAlignmentPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Vertical Text Alignment event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnTextPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Text event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontFamilyPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Font Family property changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontAttributesPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Font Attributes proeprty changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBackgroundImagePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Background Image event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnImageSourcePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Image Name proeprty changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnPaddingPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles padding property changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCheckedPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Checked event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCloseButtonColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles CloseButton Color event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnSelectionIndicatorColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Selection Indicator Color event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.ArrangeChildren(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Handles Alignment proeprty changed event
+            </summary>
+            <param name="bindable">the data binding object</param>
+            <param name="oldValue">the old value</param>
+            <param name="newValue">the new value</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnContentPropertyChanged">
+            <summary>
+            The content property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontSizePropertyChanged">
+            <summary>
+            The font size property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnTextColorPropertyChanged">
+            <summary>
+            The text color property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBackgroundColorPropertyChanged">
+            <summary>
+            The background color property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBorderColorPropertyChanged">
+            <summary>
+            The background color property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBorderWidthPropertyChanged">
+            <summary>
+            The border thickness property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnHorizontalTextAlignmentPropertyChanged">
+            <summary>
+            The horizontal text alignment property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnVerticalTextAlignmentPropertyChanged">
+            <summary>
+            The vertical text alignment property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontFamilyPropertyChanged">
+            <summary>
+            The font family property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnTextPropertyChanged">
+            <summary>
+            The text property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnFontAttributesPropertyChanged">
+            <summary>
+            The font attributes property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnBackgroundImagePropertyChanged">
+            <summary>
+            The background image property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnImageSourcePropertyChanged">
+            <summary>
+            The image name property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnPaddingPropertyChanged">
+            <summary>
+            The padding property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCheckedPropertyChanged">
+            <summary>
+            The checked property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnEnabledPropertyChanged">
+            <summary>
+            The enabled property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCloseButtonColorPropertyChanged">
+            <summary>
+            The close button color property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnSelectionIndicatorColorPropertyChanged">
+            <summary>
+            The selection indicator color property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCommandPropertyChanged">
+            <summary>
+            The command property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCommandCanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnCommandParameterPropertyChanged">
+            <summary>
+            Calls the CanExecute method when the property is changed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.UpdateLayoutMeasure">
+            <summary>
+            Calls the layout measure when the font property changed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.ArrangeChildren">
+            <summary>
+            In default the button layout children are arranged in below image. 
+            If we change the alignment property the childrens are changed the positions
+            </summary>
+            The Architecture of Button
+            +--- 0 or 26 ---+--- ImageWidthAPI ---+----------- Star -----------+--- 0 or 26 ---+          Px
+            +---------------+---------------------+----------------------------+---------------+          +
+            |               |                     |                            |               |          | 
+            |  Selection    |        Image        |       Button Text          |   Close       |   Customer Provided Height
+            |  Indicator    |        View         |                            |   Button      |          |
+            +---------------+---------------------+----------------------------+---------------+          +
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.LayoutChildren(Xamarin.Forms.View,System.Int32)">
+            <summary>
+            Arrange the children in button layout
+            </summary>
+            <param name="currentColumn">Current column.</param>
+            <param name="pos">Position.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.SetVisibility">
+            <summary>
+            Sets the visibility.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.Initialize">
+            <summary>
+            Initialize this instance.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.SetInitialBaseProperties">
+            <summary>
+            Set the Initial base properties
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.OnContentChanged">
+            <summary>
+            Set the content of the control
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.AddBackgroundImage">
+            <summary>
+            Adds the background image.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.CreateButtonLayout">
+            <summary>
+            Creates the button layout.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.CreateButtonContent">
+            <summary>
+            Creates the content of the button.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.CreateCloseButtonView">
+            <summary>
+            Creates the close button view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.CreateImageIcon">
+            <summary>
+            Creates the image icon.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.CreateSelectionIndicator">
+            <summary>
+            Creates the selection indicator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButton.AddButtonLayout">
+            <summary>
+            Adds the button layout.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.CustomLabel">
+            <summary>
+            The Custom label.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.TouchEffect">
+            <summary>
+            Touch effect.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.TouchEffect.sfButton">
+            <summary>
+            The sf button.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.TouchEffect.#ctor(Syncfusion.XForms.Buttons.SfButton)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.TouchEffect"/> class.
+            </summary>
+            <param name="sfButton">Sf button.</param>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.TouchEffect.IsCheckedProperty">
+            <summary>
+            Backing store for Checked property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.TouchEffect.IsChecked">
+            <summary>
+            Gets or sets the checked property
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfChipsType">
+            <summary>
+            Defines the type of the Chip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipsType.Input">
+            <summary>
+            Chip group have an editor as the last child in layout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipsType.Filter">
+            <summary>
+            Allows to select multiple chips in a group.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipsType.Choice">
+            <summary>
+            Allows to select/toggle at most only one chip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipsType.Action">
+            <summary>
+            Triggers an action while tapping the chip.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfChip">
+            <summary>
+            Represents a Xamarin.Forms Chip control which can be added in a layout and grouped using SfChipGroup.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.defaultCornerRadius">
+            <summary>
+            The default corner radius for Chip to have chip view as per in design material;
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.defaultBorderColor">
+            <summary>
+            The default color of the border as per the border design look provided in design material.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> class.
+            </summary>
+            <param name="isCreatedInternally">If set to <c>true</c> is created internally.</param>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.ShowCloseButtonProperty">
+            <summary>
+            Gets or sets a value indicating whether close button is shown or not. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.ShowSelectionIndicatorProperty">
+            <summary>
+            Gets or sets a value indicating whether selection indicator is shown or not. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.CloseButtonColorProperty">
+            <summary>
+            Gets or sets a value indicating color of close button. This is a bindable property. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChip.SelectionIndicatorColorProperty">
+            <summary>
+            Gets or sets a value indicating color of selection indicator. This is a bindable property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.IsCheckable">
+            <summary>
+            Indicates whether the chip is checkable or not. This is set internal to hide the base class property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.IsChecked">
+            <summary>
+            Indicates whether the chip is checked or not.  This is set internal to hide the base class property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.IsCreatedInternally">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> is created internally.
+            </summary>
+            <value><c>true</c> if is created internally; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.DataContext">
+            <summary>
+            Gets or sets the data context.
+            </summary>
+            <value>The data context.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> is selected.
+            </summary>
+            <value><c>true</c> if is selected; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.PressedBackgroundColor">
+            <summary>
+            Gets or sets the color of the pressed background.
+            </summary>
+            <value>The color of the pressed background.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.ShowCloseButton">
+            <summary>
+            Gets or sets a value indicating whether close button is shown or not in the Chip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.ShowSelectionIndicator">
+            <summary>
+            Gets or sets a value indicating whether selection indicator is shown or not in the Chip.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.SelectionIndicatorColor">
+            <summary>
+            Gets or sets the color of the selection indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChip.CloseButtonColor">
+            <summary>
+            Gets or sets the color of the close button.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Dispose">
+            <summary>
+            Releases all resource used by the <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Dispose(System.Boolean)">
+            <summary>
+            Disposing all resource used by the <see cref="T:Syncfusion.XForms.Buttons.SfChip"/> object.
+            </summary>
+            <param name="disposing">If set to <c>true</c> disposing.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the controls style.
+            </summary>
+            <returns>Returns the style.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when a theme dictionary that contains the value for the control key is merged in application. 
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChip.Initialize">
+            <summary>
+            Initialize the chip basic rendering.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfChipGroup">
+            <summary>
+            Represents a grouping control which adds SfChips control to a layout and grouped them for selection.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.chipGroupChildren">
+            <summary>
+            The children of the chip group.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.previouslySelectedChip">
+            <summary>
+            The tap chip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.textChipDefaultPadding">
+            <summary>
+            This is a default left and right padding of chip without icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.iconChipDefaultPadding">
+            <summary>
+            This is a default left and right padding of chip with icon.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.DisplayMemberPathProperty">
+            <summary>
+            Gets or sets the member path for the display text in the Chip. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ImageMemberPathProperty">
+            <summary>
+            Gets or sets the member path for the icon image in the Chip. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ItemsProperty">
+            <summary>
+            Gets or sets the items for Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ItemsSourceProperty">
+            <summary>
+            Gets or sets the items source for Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ItemTemplateProperty">
+            <summary>
+            Gets or sets the ItemTemplate for chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipLayoutProperty">
+            <summary>
+            Gets or sets the layout to add all the chips in a Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.TypeProperty">
+            <summary>
+            Gets or sets the type of chips in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.SelectedItemsProperty">
+            <summary>
+            Gets or sets the selected items in the Filter Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.SelectedItemProperty">
+            <summary>
+            Gets or sets the selected items in the Choice Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.InputViewProperty">
+            <summary>
+            Gets or sets the input view or editor in the Input Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.CommandProperty">
+            <summary>
+            Gets or sets the command for the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.SelectedChipBackgroundColorProperty">
+            <summary>
+            Gets or sets the background color for the selected chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.SelectedChipTextColorProperty">
+            <summary>
+            Gets or sets the text color for the selected chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipBackgroundColorProperty">
+            <summary>
+            Gets or sets the background color for the chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipBorderColorProperty">
+            <summary>
+            Gets or sets the border color for the chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipTextColorProperty">
+            <summary>
+            Gets or sets the text color for the chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipTextSizeProperty">
+            <summary>
+            Gets or sets the text size for the chip in the Chip group. This is a bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipPaddingProperty">
+            <summary>
+            Gets or sets the spacing between the chips.This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipBorderWidthProperty">
+            <summary>
+             Gets or sets the border width of chips. This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ItemHeightProperty">
+            <summary>
+            Gets or sets the height of the chips in group. This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ShowIconProperty">
+            <summary>
+            Gets or sets the value indicating whether icon is visible in chip.This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.CloseButtonColorProperty">
+            <summary>
+            Gets or sets the value indicating whether icon is visible in chip.This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.SelectionIndicatorColorProperty">
+            <summary>
+            Gets or sets the value indicating whether icon is visible in chip.This is bindable property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.XForms.Buttons.SfChipGroup.ChipImageWidthProperty">
+            <summary>
+            Gets or sets the size of image view.This is bindable property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.Items">
+            <summary>
+            Gets or sets the collection of SfChip to generate the chips in ChipGroup.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ItemsSource">
+            <summary>
+            Gets or sets the collection of items to generate the chips in ChipGroup.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ItemTemplate">
+            <summary>
+            Gets or sets the item template for chip group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipImageWidth">
+            <summary>
+            Gets or sets the width of image icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipLayout">
+            <summary>
+            Gets or sets the layout in which chips have to be added.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.DisplayMemberPath">
+            <summary>
+            Gets or sets the member path value of the display text in the chip. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ImageMemberPath">
+            <summary>
+            Gets or sets the path of the icon in the chip. 
+            </summary>
+            <value>This property takes the string as its value.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.Type">
+            <summary>
+            Gets or sets the type of chips in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.SelectedItems">
+            <summary>
+            Gets or sets the selected items in filter chips.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.SelectedItem">
+            <summary>
+            Gets or sets the selected item in choice chips.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.InputView">
+            <summary>
+            Gets or sets the input view for input chips type.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.Command">
+            <summary>
+            Gets or sets the command to be executed on tapping the chips in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.SelectedChipTextColor">
+            <summary>
+            Gets or sets the text color of the selected chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipBorderColor">
+            <summary>
+            Gets or sets the border color of chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipBorderWidth">
+            <summary>
+            Gets or sets the border width of chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.SelectedChipBackgroundColor">
+            <summary>
+            Gets or sets the background color of the selected chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipTextColor">
+            <summary>
+            Gets or sets the text color of the chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipTextSize">
+            <summary>
+            Gets or sets the text size of the chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipBackgroundColor">
+            <summary>
+            Gets or sets the background color of the chip in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.SelectionIndicatorColor">
+            <summary>
+            Gets or sets the color of the chip's selection indicator in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.CloseButtonColor">
+            <summary>
+            Gets or sets the color of the chip's selection indicator in group.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ChipPadding">
+            <summary>
+            Gets or sets the chip padding for arranging the items with viewable padding in horizontal orientation. 
+            </summary>
+            <value>The chip padding.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ItemHeight">
+            <summary>
+            Gets or sets the height of the chip in group.
+            </summary>
+            <value>The height of the item.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.ShowIcon">
+            <summary>
+            Gets or sets a value indicating whether icon is shown in chips.
+            </summary>
+            <value><c>true</c> if show icon; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.XForms.Buttons.SfChipGroup.Content">
+            <summary>
+            Sets the content. It is set to internal for hiding this property.
+            </summary>
+            <value>The content.</value>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.XForms.Buttons.SfChipGroup.ChipClicked">
+            <summary>
+            Clicked event handler for chip.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Dispose(System.Boolean)">
+            <summary>
+            Dispose the specified disposing.
+            </summary>
+            <param name="disposing">If set to <c>true</c> disposing.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.GetChips">
+            <summary>
+            Returns a read only collection of chips in the group.
+            </summary>
+            <returns>The children.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Dispose">
+            <summary>
+            Releases all resource used by the <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/> object.
+            </summary>
+            <remarks>Call <see cref="M:Syncfusion.XForms.Buttons.SfChipGroup.Dispose(System.Boolean)"/> when you are finished using the
+            <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/>. The <see cref="M:Syncfusion.XForms.Buttons.SfChipGroup.Dispose(System.Boolean)"/> method leaves the
+            <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/> in an unusable state. After calling
+            <see cref="M:Syncfusion.XForms.Buttons.SfChipGroup.Dispose(System.Boolean)"/>, you must release all references to the
+            <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/> so the garbage collector can reclaim the memory that
+            the <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/> was occupying.</remarks>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnSelectedItemsPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the selected chips in the group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of SelectedItems property.</param>
+            <param name="newValue">The new value of SelectedItems property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnCommandChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Command property has been changed.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of Command property.</param>
+            <param name="newValue">The new value of Command property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnSelectedItemPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the selected chip in the group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of SelectedItem property.</param>
+            <param name="newValue">The new value of SelectedItem property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnItemsPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Creates chips for the given items and adds it in layout.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ItemsSource property.</param>
+            <param name="newValue">The new value of ItemsSource property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnItemsSourcePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Creates chips for the given items source and adds it in layout.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ItemsSource property.</param>
+            <param name="newValue">The new value of ItemsSource property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnLayoutPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Removes the item from current layout and adds it in new layout.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of Layout property.</param>
+            <param name="newValue">The new value of Layout property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnItemHeightPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the height of item in chip group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of item height property.</param>
+            <param name="newValue">The new value of item height property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipPaddingPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the padding of chip item in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipPadding property.</param>
+            <param name="newValue">The new value of ChipPadding property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipBorderWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the border width of of chip item in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipPadding property.</param>
+            <param name="newValue">The new value of ChipPadding property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnShowIconPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the visibility of icons in chip.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ShowIcon property.</param>
+            <param name="newValue">The new value of ShowIcon property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipBackgroundColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the background color of chip in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipBackgroundColor property.</param>
+            <param name="newValue">The new value of ChipBackgroundColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipTextColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the text color property for all chips in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipTextColor property.</param>
+            <param name="newValue">The new value of ChipTextColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipTextSizePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the font size property for all chips in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipTextSize property.</param>
+            <param name="newValue">The new value of ChipTextSize property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipBorderColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the border color property for all chips in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of ChipBorderColor property.</param>
+            <param name="newValue">The new value of ChipBorderColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnCloseButtonColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the close button color property for all chips in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of CloseButtonColor property.</param>
+            <param name="newValue">The new value of CloseButtonColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnSelectionIndicatorColorPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the selection indicator color property for all chips in group.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of SelectionIndicatorColor property.</param>
+            <param name="newValue">The new value of SelectionIndicatorColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnChipImageWidthPropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Updates the chip image width property changed.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of SelectionIndicatorColor property.</param>
+            <param name="newValue">The new value of SelectionIndicatorColor property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnTypePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>
+            Configures the chip properties based on its type.
+            </summary>
+            <param name="bindableObject">The original source of property changed event.</param>
+            <param name="oldValue">The old value of Type property.</param>
+            <param name="newValue">The new value of Type property.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Syncfusion#XForms#Themes#IParentThemeElement#GetThemeDictionary">
+            <summary>
+            Returns the controls style.
+            </summary>
+            <returns>Returns the style.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Syncfusion#XForms#Themes#IThemeElement#OnControlThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when a theme dictionary that contains the value for the control key is merged in application. 
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Syncfusion#XForms#Themes#IThemeElement#OnCommonThemeChanged(System.String,System.String)">
+            <summary>
+            The method called when users merge a theme dictionary that contains value for SyncfusionTheme dynamic resource key.
+            </summary>
+            <param name="oldTheme">The old theme Parameter.</param>
+            <param name="newTheme">The new theme Parameter.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SubscribeCollectionChanged(System.String,System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>
+            ItemsSource collection changed.
+            </summary>
+            <param name="collection">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ChipGroupCollectionChanged(System.Object,System.Object,System.String)">
+            <summary>
+            Chip group collection changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UnsubscribeCollectionChanged(System.String,System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>
+            Unsubscribes the collection events.
+            </summary>
+            <param name="collection">Collection.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.OnSelectedItemsPropertyChanged(System.Object,System.Object)">
+            <summary>
+            Updates the selected chips in the group.
+            </summary>
+            <param name="oldValue">The old selected value.</param>
+            <param name="newValue">The new selected value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SelectedItemsCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Triggers when the selected items collection changed.
+            </summary>
+            <param name="sender">The sender of the collection.</param>
+            <param name="e">The notify collection changed event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.CollectionChanged(System.String,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Handles the notify collection changed event handler.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.GetPropertyValue(System.String,System.Object)">
+            <summary>
+            Returns the value of a property in an object.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="item">The element from chips collection.</param>
+            <returns>The property value from item.</returns>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SubscribeCommandEvents">
+            <summary>
+            Executes the chip command.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ClearLayoutChildren">
+            <summary>
+            Clears the layout children.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.CreateAndInitializeChips">
+            <summary>
+            Generate and add the chip to the Layout of ChipGroup.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.GetNewChip(System.Object)">
+            <summary>
+            Creates a new chip using given context.
+            </summary>
+            <param name="chipData">The context of the chip.</param>
+            <returns>A chip with default customization.</returns>
+            It represents single chip.
+            +-0 or 26-+--0 or 34-+---------star----------+---0 or 26----+CORNERRADIUS
+            |         |          |                       |              |         
+            5         |          |      PADDING          |              |         
+            |         |          |                       |              |        
+            |---------|----------|-----------------------|--------------|  HEIGHT = Default button height (or) ItemHeight  
+            |         |          |                       |              |          
+            |INDICATOR|  ICON    |  CHIP TEXT            | CLOSEBUTTON  | 
+            |         |          |                       |              |        
+            |---------|----------|-----------------------|--------------+   
+            |         |          |                       |              |           
+            |         |          |      PADDING          |              |           
+            +---------+----------+-----------------------+--------------+CORNERRADIUS   
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ApplyChipColor(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Customization of chip based on the visual mode
+            </summary>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UpdateChipProperties(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Arranges the close and selection indicator in chip based on <see cref="P:Syncfusion.XForms.Buttons.SfChipGroup.Type"/> of chip group./>.
+            </summary>
+            <param name="chip">the chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UpdateChipProperties(System.String)">
+            <summary>
+            Updates the chip properties.
+            </summary>
+            <param name="propertyName">Property name.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.AddChildToLayout(Xamarin.Forms.View)">
+            <summary>
+            Add the child to layout.
+            </summary>
+            <param name="child">The child to be added.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.RemoveChipFromLayout(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Removes the chip from layout.
+            </summary>
+            <param name="chip">Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SelectOrUnselectChip(System.Object)">
+            <summary>
+            Selects or unselects the chip based on type.
+            </summary>
+            <param name="item">The item to be selected.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UnselectFilterChip(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Unselects the filter chip.
+            </summary>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UnselectChoiceChip">
+            <summary>
+            Unselects the choice chip.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.RemoveChipFromSelectedItems(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Removes the selected chip from selected items.
+            </summary>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.UnsubscribeChipEvents(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Unsubscribes the chip events.
+            </summary>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SubscribeChipEvents(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Subscribes the chip Clicked and CloseButtonClicked events.
+            </summary>
+            <param name="chip">Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SelectOrUnselectMultipleChips(System.Collections.IList)">
+            <summary>
+            Selects or unselects the multiple chips based on type.
+            </summary>
+            <param name="list">The items to be selected.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ChipGroupLayoutChanged(System.Object,System.Object)">
+            <summary>
+            Chips the group layout changed.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.HandleClicked(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            The raise clicked event for chip.
+            </summary>
+            <param name="chip"> The Event Argument as Chip. </param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ClearAndCreateChips(System.Object,System.Boolean)">
+            <summary>
+            Intializes and create chip group.
+            </summary>
+            <param name="oldValue">Old layout.</param>
+            <param name="isLayoutChanged">If set to <c>true</c> is layout changed.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.InitializeCollection">
+            <summary>
+            Initializes the collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.GetChipDataContext(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Gets the chip data context from ItemsSource property.
+            </summary>
+            <returns>The chip data context.</returns>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.GetChip(System.Object)">
+            <summary>
+            Retr the chip using its data context.
+            </summary>
+            <returns>The chip data context.</returns>
+            <param name="dataContext">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SetContentView">
+            <summary>
+            Sets the layout as content.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.SetChipHeight(Syncfusion.XForms.Buttons.SfChip)">
+            <summary>
+            Sets the height of the chip only for Items property.
+            </summary>
+            <param name="chip">The Chip.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Chip_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Invoked when the chip is tapped.
+            </summary>
+            <param name="sender">The original sender of the event.</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Chip_CloseButtonClicked(System.Object,System.EventArgs)">
+            <summary>
+            Invoked when the chip close button is tapped.
+            </summary>
+            <param name="sender">The original sender of the event.</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ItemsCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Handles the Items collection changed.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.ItemsSourceCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Handles the ItemsSource collection changed.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroup.Command_CanExecuteChanged(System.Object,System.EventArgs)">
+            <summary>
+            Call the Commands can execute changed method
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.ChipCollection">
+            <summary>
+            Defines the type for adding collection of SfChip.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.ChipCollection.#ctor(Syncfusion.XForms.Buttons.SfChipGroup)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.ChipCollection"/> class.
+            </summary>
+            <param name="group">Chip group.</param>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfSegmentedControlStyles">
+            <summary>
+            Holds the theme styles for the segmented control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfSegmentedControlStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfSegmentedControlStyles"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfButtonStyles">
+            <summary>
+            Holds the theme style for the button control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfButtonStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfButtonStyles"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfChipGroupStyles">
+            <summary>
+            Holds the theme style for the <see cref="T:Syncfusion.XForms.Buttons.SfChipGroup"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipGroupStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfChipGroupStyles" /> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.Buttons.SfChipStyles">
+            <summary>
+            Holds the theme style for the <see cref="T:Syncfusion.XForms.Buttons.SfChip"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.XForms.Buttons.SfChipStyles.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.XForms.Buttons.SfChipStyles" /> class.
+            </summary>
+        </member>
+    </members>
+</doc>

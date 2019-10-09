@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KidsApp.Forms.Home_Researcher.ResearcherNavigationDetail"
+             xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             Title="Profile">
+    <StackLayout Padding="10">
+        <Label x:Name="lblFullName" Margin="0,10,0,10"  FontAttributes="Bold" HorizontalTextAlignment="Center"></Label>
+        <Label x:Name="lblEmail" Margin="0,0,0,15" FontSize ="Medium" FontAttributes="Italic" HorizontalTextAlignment="Center"></Label>
+        <dataForm:SfDataForm x:Name="ResearcherChangesDataForm" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" LabelPosition="Top"/>
+        <Button x:Name="SaveChanges" Text="Save Changes" TextColor="White" BackgroundColor="Accent" Clicked="SaveChanges_ClickedAsync"/>
+    </StackLayout>
+</ContentPage>

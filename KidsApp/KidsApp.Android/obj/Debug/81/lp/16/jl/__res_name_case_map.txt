@@ -1,0 +1,3 @@
+Layout/Spinner_item.axml;layout/spinner_item.xml
+drawable/GroupCollapse.png;drawable/groupcollapse.png
+drawable/GroupExpander.png;drawable/groupexpander.png
