@@ -26,9 +26,9 @@ namespace KidsApp.Handlers
                     HttpClient client = new HttpClient()
                     {
                         //IP address for the emulator
-                        //BaseAddress = new System.Uri("http://169.254.80.80:80/")
-                        //IP address for the phone
-                        BaseAddress = new System.Uri("http://192.168.137.1:80/")
+                        BaseAddress = new System.Uri("http://169.254.80.80:80/")
+                        //IP address for the phone if the device is connected to the computer and used for testing
+                        //BaseAddress = new System.Uri("")
                     };
 
                     string x = client.BaseAddress.ToString();
